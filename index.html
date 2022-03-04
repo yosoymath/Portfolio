@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Front</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image/logo.png" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#port">Portfólio</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#port">Portfólio</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+        <div class="btn-mobile">
+            <ion-icon name="reorder-three-outline"></ion-icon>
+        </div>
+    </header>
+
+    <main id="home">
+        <div class="container">
+            <div class="icons">
+                <a href="https://www.instagram.com/matheuxfrx/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://gitlab.com/yosoymath"><ion-icon name="logo-gitlab"></ion-icon></a>
+                <a href="https://github.com/yosoymath"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/matheusfoli/"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+            <div class="title">
+                <h1>Creative</h1>
+                <h2>Developer</h2>
+                <h3>QA tester</h3>
+            </div>
+        </div>
+    </main>
+
+    <section id="about">
+        <div class="container">
+            <div class="title">
+                <h1>Sou um Analista de QA em aprendizado</h1>
+                <p>Olá, me chamo Matheus, tenho 19 anos , curso Ciência da Computação atualmente no 7º período e sou um admirador da tecnologia e tudo que a engloba</p>
+                <div class="box-title">
+                    <p>90%</p>
+                    <div class="b1"><div class="b2"></div></div>
+                    <span>HTML</span>
+
+                    <p>75%</p>
+                    <div class="b1"><div class="b3"></div></div>
+                    <span>Java</span>
+
+                    <p>67%</p>
+                    <div class="b1"><div class="b4"></div></div>
+                    <span>JavaScript</span>
+
+                    <p>45%</p>
+                    <div class="b1"><div class="b5"></div></div>
+                    <span>CSS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="port">
+        <div class="container">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <div class="cards">
+                <label class="card" for="item-1" id="song-1">
+                    <img src="image/01.png" alt="">
+                    <h1>Web</h1>
+                    <p>Goku existe, Waydson é ruim de Ekko, Hall é gordo, David é gay, Elton é fresco, Matheus é o macho alfa</p>
+                    <button>Hire me</button>
+                </label>
+
+                <label class="card" for="item-2" id="song-2">
+                    <img src="image/02.png" alt="">
+                    <h1>Design</h1>
+                    <p>Goku existe, Waydson é ruim de Ekko, Hall é gordo, David é gay, Elton é fresco, Matheus é o macho alfa</p>
+                    <button>Hire me</button>
+                </label>
+
+                <label class="card" for="item-3" id="song-3">
+                    <img src="image/03.png" alt="">
+                    <h1>Studio</h1>
+                    <p>Goku existe, Waydson é ruim de Ekko, Hall é gordo, David é gay, Elton é fresco, Matheus é o macho alfa</p>
+                    <button>Hire me</button>
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="content-contact">
+                <div class="contact-left">
+                    <h1>Entre em contato</h1>
+                    <div class="linha1"></div>
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <span>matheusmat170@gmail.com</span>
+                    <ion-icon name="call-outline"></ion-icon>
+                    <span>+55 83 9 8732-2717</span>
+                    <ion-icon name="location-outline"></ion-icon>
+                    <span>João Pessoa, Paraíba, Brasil</span>
+                </div>
+                <div class="contact-right">
+                    <h1>Preencha o formulário</h1>
+                    <div class="linha"></div>
+                    <input type="email" placeholder="E-mail">
+                    <input type="text" placeholder="Nome">
+                    <textarea placeholder="Mensagem"></textarea>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span>Copyright 2022 <a href="">FRONT</a> All Rights Reserved</span>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn-mobile").click(function(){
+                $(".menu-mobile").slideToggle("slow")
+            })
+        })
+    </script>
+</body>
+</html>
