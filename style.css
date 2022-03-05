@@ -585,7 +585,7 @@ footer a{
         margin-right: 190px;
     }
     #about .container .box-title{
-        height: 37vh;
+        height: 43vh;
     }
     #port .container .card{
         width: 50%;
@@ -608,6 +608,6 @@ footer a{
         width: 200px;
     }
     header .menu-mobile{
-        height: 20vh;
+        height: 23vh;
     }
 }
